@@ -783,7 +783,7 @@ html {
 body {
   font-family: var(--font-primary);
   overflow-x: hidden;
-  background-color: white;
+  background-color: #16171d;
   color: var(--font-dark);
   line-height: 1.7;
   width: 100%;
@@ -12736,3 +12736,19 @@ input[type="number"]::-webkit-inner-spin-button {
   background: var(--accent-color);
 }
 
+
+.ktoe {
+  /*height: 100vh;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swapimg img{
+  width: 100%;
+  max-width: 1080px;
+}
+
+.icons img{
+  margin-right: .5rem;
+}

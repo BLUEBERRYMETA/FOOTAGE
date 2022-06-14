@@ -83,9 +83,6 @@
               <img class="header__logo__dark js-lazy" src="#" data-src="img/logo/logo-dark.png" alt="FOOTAGE">
             </a>
           </div>
-          <button id="MyBtn">
-            <i class="fa fa-wallet text-white"></i>
-          </button>
         </div>
         <!-- header__bar end -->
 
@@ -163,7 +160,7 @@
                       <p class="text-lg"><span class="text-accent">0.12</span> ETH</p>
                     </div>
                     <div class="d-flex">
-                      <button class="button -md -outline-white m-auto text-white mt-56 lg:mt-48 md:mt-32 w-100">
+                      <button id="myBtn" class="button -md -outline-white m-auto text-white mt-56 lg:mt-48 md:mt-32 w-100">
                       CONNECT WALLET</button>
                     </div>
                     <div class="d-flex">
@@ -193,113 +190,68 @@
       </section>
       <!-- section end -->
 
-      <section class="layout-pt-md layout-pb-md bg-dark-1">
-          <div class="container">
-            <div class="row justify-content-center align-items-center border-light priceBorder px-32 py-48">
-              <div class="col-12">
-                <div class="sectionHeading -md d-column">
-                  <p class="sectionHeading__subtitle text-center text-accent">
-                    Exchange for Ethereum
-                  </p>
-                  <p class="text-white text-center mt-0">
-                    1차에 민팅하신 미스테리박스 NFT(klaytn)를 이더리움 기반 NFT로 교환해주세요!
-                  </p>
-                </div>
-              </div>
-              <div class="col-12 mt-48 sm:mt-24 d-flex justify-content-center">
-                <a href="#" class="button -md -white -outline-white text-white js-button">
-                  Connect to kaikas wallet
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="layout-pt-md layout-pb-md bg-dark-1">
-          <div class="container">
-            <div class="row d-column justify-content-center align-items-center border-light priceBorder px-32 py-48">
-              <div class="col-12">
-                <div class="sectionHeading -md d-column">
-                  <p class="sectionHeading__subtitle text-center text-accent">
-                    Exchange for Ethereum
-                  </p>
-                  <p class="text-white text-center mt-0">
-                    1차에 민팅하신 미스테리박스 NFT(klaytn)를 이더리움 기반 NFT로 교환해주세요!
-                  </p>
-                  <p class="text-accent text-center">
-                    교환하실 미스테리 박스를 선택해주세요
-                  </p>
-                </div>
-              </div>
-              <div class="mt-32">
-                <h5 class="text-white text-center d-block">보유하신 미스테리 박스가 없습니다.</h5>
-              </div>
-              <div class="mt-32 fancy-grid justify-content-start align-items-center text-center">
-                <label><input type="checkbox" />#1212</label>
-                <label><input type="checkbox" />#1213</label>
-                <label><input type="checkbox" />#1214</label>
-              </div>
-              <div class="col-12 mt-48 sm:mt-24 d-flex justify-content-center">
-                <a href="#" class="button -md -white -outline-white text-white js-button">
-                  kaikas 서명하기
-                </a>
-              </div>
-              <p class="text-white text-center text-sm mt-24"> 카이카스 지갑 연결이 안될 경우 교환이 불가능합니다.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="layout-pt-md layout-pb-md bg-dark-1">
-          <div class="container">
-            <div class="row d-column justify-content-center align-items-center border-light priceBorder px-32 py-48">
-              <div class="col-12">
-                <div class="sectionHeading -md d-column">
-                  <p class="sectionHeading__subtitle text-center text-accent">
-                    Exchange for Ethereum
-                  </p>
-                  <p class="text-white text-center mt-0">
-                    1차에 민팅하신 미스테리박스 NFT(klaytn)를 이더리움 기반 NFT로 교환해주세요!
-                  </p>
-                  <p class="text-accent text-center">
-                    서명을 완료하시면 이더리움 기반의 NFT로 교환됩니다.
-                  </p>
-                </div>
-              </div>
-              <div class="mt-32 fancy-grid justify-content-start align-items-center text-center">
-                <label>#1212</label>
-                <label>#1213</label>
-              </div>
-              <div class="col-12 mt-48 sm:mt-24 d-flex justify-content-center">
-                <a href="#" id="myBtn" class="button -md -white -outline-white text-white js-button">
-                  metamask 서명하기
-                </a>
-              </div>
-              <p class="text-white text-center text-sm mt-24"> 메타마스크 지갑 연결이 안될 경우 교환이 불가능합니다.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-
-      <!-- modals -->
+     <!-- modals -->
       <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
           <div data-anim-child="slide-up delay-9" class="is-in-view">
             <div><img src="img/logo/logo-holo.png"></div>
+            <p class="sectionHeading__subtitle -light">
+              Skybox by SPORTIUM
+            </p>
           </div>
-          <div class="py-32">
-            <p class="text-white text-center fw-600 mt-32">NFT교환이 완료되었습니다.</p>
-            <p class="text-white text-center fw-600 mt-32">NFT교환에 실패하였습니다.</p>
-            <p class="text-white text-center mt-00">지갑을 확인 후 다시한번 시도해주세요.</p>
+          <div class="d-flex justify-content-between text-white fw-500 mt-32 mt-32 lg:mt-32 md:mt-20">
+            <p class="text-lg">My Klay</p>
+            <p class="text-lg text-accent">45,453</p>
+          </div>
+          <div class="positionR">
+            <img src="img/logo/icon_kaikas.png" class="positionA kaikas">
+            <input class="modalInput" value="0xsdh453asd4g42ags4353asd4g42ags435" />
+          </div>
+          <div class="positionR">
+            <img src="img/logo/icon_klay.png" class="positionA kaikas">
+            <input class="modalInput" value="0xsdh453asd4g42ags4353asd4g42ags435" />
+          </div>
+          <div class="positionR">
+            <img src="img/logo/icon_meta.png" class="positionA kaikas">
+            <input class="modalInput" value="0xsdh453asd4g42ags4353asd4g42ags435" />
           </div>
         </div>
-      </div>
 
+        <div class="mt-32"></div>
+
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div data-anim-child="slide-up delay-9" class="is-in-view">
+            <div><img src="img/logo/logo-holo.png"></div>
+            <p class="sectionHeading__subtitle -light">
+              Skybox by SPORTIUM
+            </p>
+          </div>
+          <p class="text-white text-center fw-600">발행이 완료되었습니다.</p>
+          <p class="text-white text-center mt-20">1차 프리세일이 종료되었습니다</p>
+          <button class="button -md -outline-white m-auto text-white mt-56 lg:mt-48 md:mt-32 w-100">오픈씨로 이동</button>
+        </div>
+
+        <div class="mt-32"></div>
+
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div data-anim-child="slide-up delay-9" class="is-in-view mb-32">
+            <div><img src="img/logo/logo-holo.png"></div>
+          </div>
+          <p class="text-white text-center fw-600">
+            판매가 완료되었습니다.<br>잠시 후 <span class="text-accent">3차 세일</span>이 시작됩니다.
+          </p>
+          <p class="text-white text-center mt-20">04:55</p>
+          <progress id="timer" value="32" max="100"> 32% </progress>
+        </div>
+
+        <div class="mt-32"></div>
+
+
+      </div>
 
 
 
