@@ -53,10 +53,6 @@
   51. Utilities
 
 -------------------------------------------------------------------- */
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
-
-
 .ratio {
   position: relative;
   display: block;
@@ -134,7 +130,7 @@
 }
 
 :root {
-  --font-primary: "Inter", 'Noto Sans KR', sans-serif;
+  --font-primary: "Inter", sans-serif;
   --font-secondary: "Manrope", sans-serif;
 }
 
@@ -783,7 +779,7 @@ html {
 body {
   font-family: var(--font-primary);
   overflow-x: hidden;
-  background-color: #16171d;
+  background-color: white;
   color: var(--font-dark);
   line-height: 1.7;
   width: 100%;
@@ -11899,10 +11895,6 @@ html.full-page-slider body {
 .d-block {
   display: block !important;
 }
-.d-column {
-  display: flex;
-  flex-flow: column;
-}
 
 .d-inline-block {
   display: inline-block !important;
@@ -12627,22 +12619,6 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-
-
-.priceBorder input[type="checkbox"] {
-  background-color: var(--accent-color);
-  border: none;
-  width: auto;
-  margin: 0 0.5rem;
-  text-align: center;
-  font-weight: 500;
-  font-size: 14px;
-}
-.priceBorder label{
-  color: #fff;
-  margin:  0 2rem;
-}
-
 .yt-card .thumb img {
   width: 100%;
   cursor: pointer;
@@ -12684,7 +12660,6 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
-  line-height: 28px;
 }
 
 .close:hover,
@@ -12736,19 +12711,76 @@ input[type="number"]::-webkit-inner-spin-button {
   background: var(--accent-color);
 }
 
-
-.ktoe {
-  /*height: 100vh;*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.js-section-slider.video-slider video, .js-section-slider.video-slider img {
+  max-height: 600px !important;
+  max-width: 100%;
 }
 
-.swapimg img{
+.cardCover{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.positionA.cardCover{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255,255,255,.8);
+  z-index: 9;
   width: 100%;
-  max-width: 1080px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.icons img{
-  margin-right: .5rem;
+
+.popup{
+    background-color: #000000;
+    border: 1px solid #333;
+    width: 700px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,0%);
+    left: 50%;
+    top: 10%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+    box-shadow: 5px 5px 30px rgba(0,0,0,.2);
+    z-index: 99;
+}
+
+@media(max-width: 600px){
+  .popup{width: 90%;}
+}
+
+.popup button{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 10px auto;
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  background: #222;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.popup h3{
+  color: #fff;
+  font-size: 24px;
+}
+.popup p{
+  color: #fff;
+  font-size: 14px;
+  text-align: justify;
+  margin: 20px 0;
+  line-height: 25px;
 }
